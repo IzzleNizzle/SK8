@@ -35,3 +35,10 @@
 .ui-btn {
     color: white;
 }
+
+.row {
+    margin-bottom: 0px;
+}
+.navigation {
+    text-align: center;
+}
