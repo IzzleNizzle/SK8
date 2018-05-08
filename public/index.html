@@ -2,13 +2,20 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Links for Mobile -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Materialize Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
+    <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Javascript Links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./javascript/index.js"></script>
     <title>SK8</title>
 </head>
 
@@ -16,7 +23,7 @@
     <!-- Header -->
     <div class="col s12 header">SK8</div>
     <!-- Inside Info-->
-    <div class="trial container">
+    <div class="container">
         <!-- App info -->
         <div class="col s12 info card-panel">
             <p class="info">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
@@ -26,7 +33,7 @@
         <div class="center-align">
             <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">login</a>
         </div>
-        <!-- Modal Structure -->
+        <!-- Login Modal Structure -->
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <form>
@@ -38,26 +45,49 @@
                 </form>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="footer">
-                <div class="container">
-                    <div class="row">
-              <nav class="nav-center" role="navigation">
-                <div class="nav-wrapper container">
-                  <ul>
-                    <li><a href="post.html">Post</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="map.html">Map</a></li>
-                  </ul>
+        <!-- Make an account link-->
+        <div class="col s12">
+            <p class="smalltext">Don't have an account?</p>
+            <a class="smalltext" href="#modal2">Click here</a>
+        </div>
+        <!-- Make an Account Modal Structure -->
+        <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h2>Make an account!</h2>
+                    <form>
+                        <h4>Email</h4>
+                        <input type="email" name="email">
+                        <h4>Username</h4>
+                        <input type="text" name="username">
+                        <h4>Password</h4>
+                        <input type="password" name="password">
+                        <button class="btn-large">submit</button>
+                    </form>
                 </div>
-              </nav>
             </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="nav-center" role="navigation">
+                    <div class="nav-wrapper container">
+                        <ul>
+                            <li>
+                                <a href="post.html">Post</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="map.html">Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            </div>
-            </body>
-            </html>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
-</script>
+        </div>
+    </div>
+</body>
+
+</html>
