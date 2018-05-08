@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>SK8</title>
 </head>
+
 <body>
-  <!-- Header -->
+    <!-- Header -->
     <div class="col s12 header">SK8</div>
     <!-- Inside Info-->
     <div class="trial container">
-    <!-- App info -->
-    <div class="col s12 info card-panel">
-        <p class="info">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
-            Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
-    </div>
-    <!-- Login Button -->
-    <div class="center-align">
-    <a class="btn-large">login</a>
-    </div>
-<!-- Footer -->
-    <div class="col s12 footer">footer</div>
-</body>
-</html>
+        <!-- App info -->
+        <div class="col s12 info card-panel">
+            <p class="info">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
+                Bawds jog, flick quartz, vex nymphs.</p>
+        </div>
+        <!-- Login Button -->
+        <div class="center-align">
+            <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">login</a>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <form>
+                    <h4>Username</h4>
+                    <input type="text" name="username">
+                    <h4>Password</h4>
+                    <input type="password" name="password">
+                    <button class="btn-large">login</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+                <div class="container">
+                    <div class="row">
+              <nav class="nav-center" role="navigation">
+                <div class="nav-wrapper container">
+                  <ul>
+                    <li><a href="post.html">Post</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="map.html">Map</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            </div>
+            </div>
+            </body>
+            </html>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
