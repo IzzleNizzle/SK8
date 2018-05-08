@@ -39,6 +39,21 @@
 .row {
     margin-bottom: 0px;
 }
-.navigation {
+nav.nav-center {
+    background-color: #851b19;
+}
+nav.nav-center ul {
     text-align: center;
+    background-color: #851b19;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+    background-color: #851b19;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+    background-color: #851b19;
+    margin-left: 10px;
+    margin-right: 10px;
 }
