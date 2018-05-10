@@ -26,7 +26,7 @@ auth.onAuthStateChanged(firebaseUser => { });
 // #txtPassword
 // #userName
 
-var logOut = document.getElementById("btnLogOut");
+// var logOut = document.getElementById("btnLogOut");
 
 // Preparing for user input
 var txtEmail;
@@ -36,7 +36,7 @@ var user;
 
 // Add login event
 $("#btnLogin").on("click", function () {
-
+  event.preventDefault();
   // Get email and pass
   txtEmail = $("#txtEmail").val();
   txtPassword = $("#txtPassword").val();
@@ -47,6 +47,7 @@ $("#btnLogin").on("click", function () {
 
 // Add Sign up event
 $("#btnSignUp").on("click", function () {
+  event.preventDefault();
   // Get email and pass
   txtEmail = $("#txtEmail").val().trim();
   txtPassword = $("#txtPassword").val().trim();
@@ -77,7 +78,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     console.log(firebaseUser.email)
     console.log(user.uid + 'this is your uid');
     // console.log(firebaseUser.Kb.I)
-    logOut.classList.remove("hide");
+    // logOut.classList.remove("hide");
     $("#userName").text("Hi " + firebaseUser.email + "!");
 
   } else {
@@ -85,7 +86,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     console.log('not logged in');
 
     // links to navbar
-    logOut.classList.add("hide");
+    // logOut.classList.add("hide");
     $("#userName").html("<a href='/'>Hi! Click to Log In</a>");
   }
 

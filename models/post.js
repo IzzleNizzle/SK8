@@ -7,16 +7,27 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-    body: {
-      type: DataTypes.TEXT,
+    user: {
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         len: [1]
       }
     },
-    category: {
+    lat: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    long: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    link: {
       type: DataTypes.STRING,
-      defaultValue: "Personal"
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
     }
   });
   return Post;
