@@ -71,19 +71,22 @@ a.smalltext:active {
     color: black;
 }
 
-/* =============================================================================================
-Login Page CSS 
-==============================================================================================*/
+.login-form {
+    width: 280px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.margin {
+    margin: 0;
+}
+
 .info {
     background-color: white;
 }
-.post {
-    margin-top: 13%;
-    margin-bottom: 10%;
+.account-header {
+    text-align: center;
 }
-.map {
-    height: 500px;
-}
-#map {
-    height: 100%;
-  }

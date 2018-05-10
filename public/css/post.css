@@ -70,20 +70,49 @@ a.smalltext:hover {
 a.smalltext:active {
     color: black;
 }
-
-/* =============================================================================================
-Login Page CSS 
-==============================================================================================*/
-.info {
-    background-color: white;
+.input-form {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
 }
-.post {
-    margin-top: 13%;
-    margin-bottom: 10%;
+.username-input-container {
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+    align-items: center;
+    display: flex;
+    border: 0;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
 }
-.map {
-    height: 500px;
+#username {
+    text-align: left;
+    border-radius: 5px 0 0 5px;
+    padding: 0.8em;
+    border: none;
+    height: 27px;
+    background: #fff;
+    box-shadow: none;
+    margin: 0;
+    outline: none;
+    font-size: 1em;
+    width: 100%;
+    color: #000;
+    -webkit-appearance: none;
 }
-#map {
-    height: 100%;
-  }
