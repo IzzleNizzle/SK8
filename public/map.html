@@ -16,37 +16,35 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="row header">
-        <div class "col s3"></div>
-        <div class="col s6 offset-s3 title">SK8</div>
-        <div class="col s3 logout">
-            <a href="#" id="btnLogOut" class="logout">Logout</a>
-        </div>
+  <!-- Header -->
+  <div class="row header">
+    <div class "col s3"></div>
+    <div class="col s6 offset-s3 title">SK8</div>
+    <div class="col s3 logout">
+      <a href="#" id="btnLogOut" class="logout">Logout</a>
     </div>
+  </div>
   <!-- Inside Info-->
   <div class="container">
     <!-- Post the location-->
     <div class="col s12 map card-panel">
       <div id="map"></div>
+      <p id="error"></p>
     </div>
     <!-- Name  the trick -->
     <div class="col s12 info card-panel">
       <table class="info" style="width:100%">
         <tr>
           <th>Trick</th>
-          <th>Rating</th>
-          <th>Location</th>
+          <th>Youtube Link</th>
         </tr>
         <tr>
           <td>360 toe flip</td>
-          <td>200</td>
-          <td>Location</td>
+          <td><a href=#>Link</a></td>
         </tr>
         <tr>
           <td>Ollie</td>
-          <td>50</td>
-          <td>Location</td>
+          <td><a href=#>Link</a></td>
         </tr>
       </table>
     </div>
@@ -75,13 +73,22 @@
         </div>
       </div>
     </div>
-          <!-- Javascript Links -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
-  <script src="./javascript/auth.js"></script>
-<script type="text/javascript" src="./javascript/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwR0BkRIpJvgJsEiapuPJmE6vJ9fSQnnI&callback=initMap" async
-defer></script>
+    <!-- ================================== -->
+    <!-- Javascript Links -->
+    <!-- ================================== -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <!-- Backend JS -->
+    <script src="./javascript/auth.js"></script>
+    <!-- Frontend JS -->
+    <script type="text/javascript" src="./javascript/map.js"></script>
+        <!-- Google Map API -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwR0BkRIpJvgJsEiapuPJmE6vJ9fSQnnI&callback=initMap" async
+        defer></script>
+    
 </body>
 
 </html>
