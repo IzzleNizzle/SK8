@@ -1,21 +1,44 @@
 /* =============================================================================================
-All Pages CSS 
+Header CSS 
 ==============================================================================================*/
+.header {
+    background-color: #851b19;
+    margin: 0;
+    padding: 5px 0px 8px 0px;
+    border-bottom-style: 3px outset;
+}
+.title {
+    font-family: 'Macondo Swash Caps', cursive;
+    background-color: #851b19;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.logout {
+    background-color: #851b19;
+    text-align: right;
+    float: bottom;
+}
+a.logout:link {
+    color: grey;
+}
+a.logout:visited {
+    color: grey;
+}
+a.logout:hover {
+    color: grey;
+
+}
+a.logout:active {
+    color: black;
+}
+
+
 * {
     background-color: grey;
 }
 h1, h2, h3, h4, h5, h6 {
     background-color: white;
-}
-.header {
-    font-family: 'Macondo Swash Caps', cursive;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    background-color: #851b19;
-    margin: 0;
-    padding: 5px 0px 8px 0px;
-    border-bottom-style: 3px outset;
 }
 .footer {
     position: fixed;
