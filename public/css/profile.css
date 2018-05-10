@@ -1,0 +1,115 @@
+/* =============================================================================================
+Header CSS 
+==============================================================================================*/
+.header {
+    background-color: #851b19;
+    margin: 0;
+    padding: 5px 0px 8px 0px;
+    border-bottom-style: 3px outset;
+}
+.title {
+    font-family: 'Macondo Swash Caps', cursive;
+    background-color: #851b19;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.logout {
+    background-color: #851b19;
+    text-align: right;
+    float: bottom;
+}
+a.logout:link {
+    color: grey;
+}
+a.logout:visited {
+    color: grey;
+}
+a.logout:hover {
+    color: grey;
+
+}
+a.logout:active {
+    color: black;
+}
+
+
+body {
+    background-color: grey;
+}
+h1, h2, h3, h4, h5, h6 {
+    background-color: white;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #851b19;
+    color: white;
+    text-align: center;
+}
+.row {
+    margin-bottom: 0px;
+}
+.ui-btn {
+    color: white;
+}
+nav.nav-center {
+    background-color: #851b19;
+}
+nav.nav-center ul {
+    text-align: center;
+    background-color: #851b19;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+    background-color: #851b19;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+    background-color: #851b19;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.smalltext {
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
+a.smalltext:link {
+    color: black;
+}
+a.smalltext:visited {
+    color: #851b19;
+    text-decoration: underline;
+}
+a.smalltext:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+a.smalltext:active {
+    color: black;
+}
+
+.login-form {
+    width: 280px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.margin {
+    margin: 0;
+}
+
+.info {
+    background-color: white;
+}
+.account-header {
+    text-align: center;
+}
