@@ -10,75 +10,75 @@
     <link rel="stylesheet" href="./css/post.css">
     <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
     <script src="./javascript/auth.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>SK8</title>
 </head>
 
 <body>
     <!-- Header -->
-    <div class="navbar-fixed">
-        <nav>
-    <div class="col s12 header">SK8</div>
-    </nav>
+    <div class="row header">
+        <div class "col s3"></div>
+        <div class="col s6 offset-s3 title">SK8</div>
+        <div class="col s3 logout">
+            <a href="#" id="btnLogOut" class="logout">Logout</a>
+        </div>
     </div>
     <!-- Inside Info-->
     <div class="container">
         <div class="post">
             <form>
-                <!-- Auto-populate user's username -->
                 <div class="col s12 input card-panel">
-                    <div class="input-form delivery">
-                        <div class="username-input-container">
-                        <input id="username" type="text" name="username" placeholder="Username">
+                    <!-- Enter the Trick Name -->
+                    <div class="input-form">
+                        <div class="input-container">
+                            <input class="input-space" id="trickname" type="text" name="trickname" placeholder="Trick Name">
                         </div>
                     </div>
-                <!-- Post the location-->
-                <div class="col s12 input card-panel">
-                    <p class="info">Location</p>
-                    <input type="location" name="location">
-                </div>
-                <!-- Name  the trick -->
-                <div class="col s12 input card-panel">
-                    <p class="info">Trick Name</p>
-                    <input type="text" name="trick">
-                </div>
-                <!-- Post the trick -->
-                <div class="col s12 input card-panel">
-                    <p class="info">Trick Image</p>
-                    <input type="image" name="image" alt="Upload">
-                </div>
-                <!-- Rate the trick -->
-                <div class="col s12 input card-panel">
-                    <p class="info">Rating</p>
-                    <input type="text" name="rating">
-                </div>
-                <!-- Submit Button -->
-                <div class="center-align">
-                    <a class="btn-large">submit</a>
-                </div>
-            </form>
-        </div>
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <nav class="nav-center" role="navigation">
-                        <div class="nav-wrapper container">
-                            <ul>
-                                <li class="active">
-                                    <a href="post.html">Post</a>
-                                </li>
-                                <li>
-                                    <a href="profile.html">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="map.html">Map</a>
-                                </li>
-                            </ul>
+                    <!-- Enter the Location -->
+                        <div class="input-form">
+                            <div class="input-container">
+                                <input class="input-space" id="location" type="text" name="location" placeholder="Location">
+                            </div>
                         </div>
-                    </nav>
+                    <!-- Enter the Rating -->
+                        <div class="input-form">
+                            <div class="input-container">
+                                <input class="input-space" id="rating" type="text" name="rating" placeholder="Rate Your Trick">
+                            </div>
+                        </div>
+                        <!-- Post the trick -->
+                        <div class="col s12 input card-panel">
+                            <p class="info">Trick Image</p>
+                            <input type="image" name="image" alt="Upload">
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="center-align">
+                            <a class="btn-large">submit</a>
+                        </div>
+            </form>
+            </div>
+            <!-- Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <nav class="nav-center" role="navigation">
+                            <div class="nav-wrapper container">
+                                <ul>
+                                    <li class="active">
+                                        <a href="post.html">Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="map.html">Map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
 </body>
 
 </html>
