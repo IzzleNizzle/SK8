@@ -11,11 +11,13 @@
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Javascript Links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="./javascript/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script src="./javascript/auth.js"></script>
     <title>SK8</title>
 </head>
 
@@ -36,58 +38,79 @@
         <!-- Login Modal Structure -->
         <div id="modal1" class="modal">
             <div class="modal-content">
-                <form>
-                    <h4>Username</h4>
-                    <input type="text" name="username">
-                    <h4>Password</h4>
-                    <input type="password" name="password">
-                    <button class="btn-large">login</button>
+                <form class="col s12" method="post">
+                    <div class='row'>
+                      <div class='col s12'></div>
+                    </div>
+                    <div class='row'>
+                      <div class='input-field col s12'>
+                        <input class='validate' type='email' name='email' id='email' />
+                        <label for='email'>Enter your email</label>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='input-field col s12'>
+                        <input class='validate' type='password' name='password' id='password' />
+                        <label for='password'>Enter your password</label>
+                      </div>
+                      <label style='float: right;'>
+                                        <a class='indigo-text' href='#!'><b>Forgot Password?</b></a>
+                      </label>
+                    </div>
+        
+                    <br />
+                    <center>
+                      <div class='row'>
+                        <button id="btnLogin" type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                      </div>
+                    </center>
                 </form>
             </div>
         </div>
         <!-- Make an account link-->
         <div class="col s12">
             <p class="smalltext">Don't have an account?</p>
-            <a class="smalltext" href="#modal2">Click here</a>
+            <a class="smalltext modal-trigger" href="#modal2">Click here</a>
         </div>
         <!-- Make an Account Modal Structure -->
         <div id="modal2" class="modal">
-                <div class="modal-content">
-                    <h2>Make an account!</h2>
-                    <form>
-                        <h4>Email</h4>
-                        <input type="email" name="email">
-                        <h4>Username</h4>
-                        <input type="text" name="username">
-                        <h4>Password</h4>
-                        <input type="password" name="password">
-                        <button class="btn-large">submit</button>
-                    </form>
-                </div>
-            </div>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <nav class="nav-center" role="navigation">
-                    <div class="nav-wrapper container">
-                        <ul>
-                            <li>
-                                <a href="post.html">Post</a>
-                            </li>
-                            <li>
-                                <a href="profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="map.html">Map</a>
-                            </li>
-                        </ul>
+            <div class="modal-content">
+                <p class="account-header">Make an account!</p>
+                <form>
+                    <div class='input-field col s12'>
+                        <input class='validate' id="txtEmail" type='email' name='email' id='email' />
+                        <label for='email'>Enter your email</label>
                     </div>
-                </nav>
+                      <div class='input-field col s12'>
+                        <input class='validate' id="txtPassword" type='password' name='password' id='password' />
+                        <label for='password'>Enter your password</label>
+                      </div>
+                            <button id="btnSignUp" class="btn-large">submit</button>
+                </form>
             </div>
         </div>
-    </div>
+            <!-- Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <nav class="nav-center" role="navigation">
+                            <div class="nav-wrapper container">
+                                <ul>
+                                    <li>
+                                        <a href="post.html">Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="map.html">Map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>
