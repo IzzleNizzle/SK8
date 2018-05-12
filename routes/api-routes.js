@@ -20,11 +20,11 @@ module.exports = function(app) {
       });
   });
 
-  // Get route for returning posts of a specific category
-  app.get("/api/posts/category/:category", function(req, res) {
+  // Get route for returning posts of a specific user
+  app.get("/api/posts/user/:user", function(req, res) {
     db.Post.findAll({
       where: {
-        category: req.params.category
+        user: req.params.user
       }
     })
       .then(function(dbPost) {
