@@ -1,3 +1,6 @@
+var long;
+var lat;
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -6,19 +9,24 @@ function getLocation() {
     }
 }
 
-$("#postSubmit").click(function(){
-
 getLocation();
+
+function showPosition(position){
+    lat = position.coords.latitude;
+    long = position.coords.longitude;
+}
+
+$("#postSubmit").on('click', function(){
+console.log('test');
 
 var trick = {
     "title": $("#trickname").val(),
     "user": user.email,
-    "lat": position.coords.latitude,
-    "long": position.coords.longitude,
+    "lat": lat,
+    "long": long,
     "link": $("#tricklink").val()
 }
 
-$.post("/api/posts", trick, callback);
-
+$.post("/api/posts", trick);
 
 });
