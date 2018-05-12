@@ -27,26 +27,49 @@ a.logout:visited {
 }
 a.logout:hover {
     color: grey;
-
 }
 a.logout:active {
     color: black;
 }
 /* =============================================================================================
-All Pages CSS 
+Body CSS 
 ==============================================================================================*/
 body {
     background-color: grey;
 }
-h1, h2, h3, h4, h5, h6 {
-    background-color: white;
+.input-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
 }
-.header {
-    background-color: #851b19;
+.input-container {
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid grey;
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+    align-items: center;
+    display: flex;
+    border: 0;
+    font-size: 1em;
     margin: 0;
-    padding: 5px 0px 8px 0px;
-    border-bottom-style: 3px outset;
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
 }
+/* =============================================================================================
+Footer CSS 
+==============================================================================================*/
 .footer {
     position: fixed;
     left: 0;
@@ -79,69 +102,4 @@ nav.nav-center ul li a {
     background-color: #851b19;
     margin-left: 10px;
     margin-right: 10px;
-}
-.smalltext {
-    text-align: center;
-    display: block;
-    margin-bottom: 0;
-}
-a.smalltext:link {
-    color: black;
-}
-a.smalltext:visited {
-    color: #851b19;
-    text-decoration: underline;
-}
-a.smalltext:hover {
-    text-decoration: underline;
-    color: white;
-
-}
-a.smalltext:active {
-    color: black;
-}
-.input-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #eee;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 0;
-    margin: 0 0 10px 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-}
-.input-container {
-    background: #fff;
-    border-radius: 5px 0 0 5px;
-    border-right: 1px solid grey;
-    box-sizing: border-box;
-    width: calc(100% - 50px);
-    align-items: center;
-    display: flex;
-    border: 0;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-}
-.input-space {
-    text-align: left;
-    border-radius: 5px 0 0 5px;
-    padding: 0.8em;
-    border: none;
-    height: 27px;
-    background: #fff;
-    box-shadow: none;
-    margin: 0;
-    outline: none;
-    font-size: 1em;
-    width: 100%;
-    color: #000;
-    -webkit-appearance: none;
 }

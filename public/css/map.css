@@ -33,22 +33,20 @@ a.logout:active {
     color: black;
 }
 /* =============================================================================================
-Map CSS 
+Body CSS 
 ==============================================================================================*/
 .map {
     height: 500px;
 }
 #map {
     height: 100%;
-  }
-
-
+}
 body {
     background-color: grey;
 }
-h1, h2, h3, h4, h5, h6 {
-    background-color: white;
-}
+/* =============================================================================================
+Footer CSS 
+==============================================================================================*/
 .footer {
     position: fixed;
     left: 0;
@@ -81,44 +79,4 @@ nav.nav-center ul li a {
     background-color: #851b19;
     margin-left: 10px;
     margin-right: 10px;
-}
-.smalltext {
-    text-align: center;
-    display: block;
-    margin-bottom: 0;
-}
-a.smalltext:link {
-    color: black;
-}
-a.smalltext:visited {
-    color: #851b19;
-    text-decoration: underline;
-}
-a.smalltext:hover {
-    text-decoration: underline;
-    color: white;
-
-}
-a.smalltext:active {
-    color: black;
-}
-
-.login-form {
-    width: 280px;
-    font-size: 14px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.87);
-}
-
-.margin {
-    margin: 0;
-}
-
-.info {
-    background-color: white;
-}
-.account-header {
-    text-align: center;
 }
