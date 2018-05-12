@@ -18,6 +18,7 @@ Header CSS
     background-color: #851b19;
     text-align: right;
     float: bottom;
+    color: grey;
 }
 a.logout:link {
     color: grey;

@@ -32,7 +32,7 @@ auth.onAuthStateChanged(firebaseUser => { });
 var txtEmail;
 var txtPassword;
 var user;
-
+// import logInError() from './index.js';
 
 // Add login event
 $("#btnLogin").on("click", function () {
@@ -42,7 +42,20 @@ $("#btnLogin").on("click", function () {
   txtPassword = $("#txtPassword").val();
   // Sign in 
   const promise = auth.signInWithEmailAndPassword(txtEmail, txtPassword);
-  promise.catch(e => console.log(e.message));
+  promise
+    .then(response => {
+      console.log('response', response);
+      // run the success modal
+      logInSuccess();
+      // show the logout button
+      $("#btnLogOut").show();
+    })
+    .catch(e => {
+      console.log(e.message)
+      console.log('you didnt sign in');
+      // run the error modal
+      logInError(); 
+    });
 })
 
 // Add Sign up event
@@ -53,7 +66,21 @@ $("#btnSignUp").on("click", function () {
   txtPassword = $("#txtPassword").val().trim();
   // Sign up 
   const promise = auth.createUserWithEmailAndPassword(txtEmail, txtPassword);
-  promise.catch(e => console.log(e.message));
+  promise
+  .then(response => {
+    console.log('response', response);
+    // run the success modal
+    logInSuccess();
+    // show the logout button
+    $("#btnLogOut").show();
+  })
+  .catch(e => {
+    console.log(e.message)
+    $("#errormessage").html(e.message);
+    console.log('you didnt sign in');
+    // run the error modal
+    logInError(); 
+  });
 })
 
 
@@ -64,6 +91,8 @@ $("#btnLogOut").on("click", function () {
   firebase.auth().signOut();
   user = null;
   console.log("test");
+  $("#btnLogOut").hide();
+  window.location.href = 'index.html';
 });
 
 
