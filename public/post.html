@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Links for Mobile -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Materialize Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps" rel="stylesheet">
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <!-- CSS Link -->
     <link rel="stylesheet" href="./css/post.css">
     <title>SK8</title>
 </head>
@@ -22,53 +26,70 @@
     </div>
     <!-- Inside Info-->
     <div class="container">
-        <div class="post">
-            <form>
-                <div class="col s12 input card-panel">
-                    <!-- Enter the Trick Name -->
-                    <div class="input-form">
-                        <div class="input-container">
-                            <input class="input-space" id="trickname" type="text" name="trickname" placeholder="Trick Name">
-                        </div>
-                    </div>
-                     <!-- Enter the Trick Link -->
-                    <div class="input-form">
-                        <div class="input-container">
-                            <input class="input-space" id="tricklink" type="text" name="triklink" placeholder="Youtube Link">
-                        </div>
-                    </div>
-                        <!-- Submit Button -->
-                        <div class="center-align">
-                            <a class="btn-large" id="postSubmit">submit</a>
-                        </div>
-            </form>
-            </div>
-            <!-- Footer -->
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <nav class="nav-center" role="navigation">
-                            <div class="nav-wrapper container">
-                                <ul>
-                                    <li class="active">
-                                        <a href="post.html">Post</a>
-                                    </li>
-                                    <li>
-                                        <a href="profile.html">Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="map.html">Map</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+        <div class="col s12 input card-panel">
+            <div class='row'>
+                <div class='col s12'>
+                    <p>To post your trick, you'll need to give it a name, and link a video of you perfoming it on Youtube here.
+                    </p>
                 </div>
             </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
-            <script src="./javascript/auth.js"></script>
-            <script src="./javascript/post.js"></script>
+        </div>
+        <div class="col s12 input card-panel">
+            <form class="col s12" method="post">
+                <!-- Enter the Trick Name -->
+                <div class='row'>
+                    <div class='input-field col s12'>
+                        <input class='validate' type='text' name='trickname' id='trickname' />
+                        <label for='trickname'>Trick Name</label>
+                    </div>
+                </div>
+                <!-- Enter the Trick Link -->
+                <div class='row'>
+                    <div class='input-field col s12'>
+                        <input class='validate' type='text' name='trikLink' id='tricklink' />
+                        <label for='tricklink'>Youtube Link</label>
+                    </div>
+                </div>
+
+                <br />
+                <!-- Submit Button -->
+                <center>
+                    <div class='row'>
+                        <div class="col s12">
+                            <button id="postSubmit" type='submit' name='btn_login' class='col s12 startup btn btn-large waves-effect'>submit</button>
+                        </div>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="nav-center" role="navigation">
+                    <div class="nav-wrapper container">
+                        <ul>
+                            <li class="active">
+                                <a href="post.html">Post</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="map.html">Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script src="./javascript/auth.js"></script>
+    <script src="./javascript/post.js"></script>
 </body>
 
 </html>

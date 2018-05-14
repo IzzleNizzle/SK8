@@ -2,22 +2,23 @@
 Header CSS 
 ==============================================================================================*/
 .header {
-    background-color: #851b19;
+    background-color: #1A2930;
     margin: 0;
     padding: 5px 0px 8px 0px;
     border-bottom-style: 3px outset;
 }
 .title {
-    font-family: 'Macondo Swash Caps', cursive;
-    background-color: #851b19;
+    font-family: 'Bungee Shade', cursive;
+    background-color: #1A2930;
     font-size: 50px;
     color: white;
     text-align: center;
 }
 .logout {
-    background-color: #851b19;
+    background-color: #1A2930;
     text-align: right;
     float: bottom;
+    color: grey;
 }
 a.logout:link {
     color: grey;
@@ -27,7 +28,6 @@ a.logout:visited {
 }
 a.logout:hover {
     color: grey;
-
 }
 a.logout:active {
     color: black;
@@ -52,7 +52,7 @@ Footer CSS
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #851b19;
+    background-color: #1A2930;
     color: white;
     text-align: center;
 }
@@ -63,20 +63,20 @@ Footer CSS
     color: white;
 }
 nav.nav-center {
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul {
     text-align: center;
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul li {
     display: inline;
     float: none;
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul li a {
     display: inline-block;
-    background-color: #851b19;
+    background-color: #1A2930;
     margin-left: 10px;
     margin-right: 10px;
 }

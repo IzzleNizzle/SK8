@@ -2,22 +2,23 @@
 Header CSS 
 ==============================================================================================*/
 .header {
-    background-color: #851b19;
+    background-color: #1A2930;
     margin: 0;
     padding: 5px 0px 8px 0px;
     border-bottom-style: 3px outset;
 }
 .title {
-    font-family: 'Macondo Swash Caps', cursive;
-    background-color: #851b19;
+    font-family: 'Bungee Shade', cursive;
+    background-color: #1A2930;
     font-size: 50px;
     color: white;
     text-align: center;
 }
 .logout {
-    background-color: #851b19;
+    background-color: #1A2930;
     text-align: right;
     float: bottom;
+    color: grey;
 }
 a.logout:link {
     color: grey;
@@ -37,36 +38,36 @@ Body CSS
 body {
     background-color: grey;
 }
-.input-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #eee;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 0;
-    margin: 0 0 10px 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
+.btn-large {
+    background-color: #F7CE3E;
 }
-.input-container {
-    background: #fff;
-    border-radius: 5px 0 0 5px;
-    border-right: 1px solid grey;
-    box-sizing: border-box;
-    width: calc(100% - 50px);
-    align-items: center;
-    display: flex;
-    border: 0;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-}
+  /* label color */
+  .input-field label {
+    color: #000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+    color: #F7CE3E;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #F7CE3E;
+    box-shadow: 0 1px 0 0 #F7CE3E;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #F7CE3E;
+    box-shadow: 0 1px 0 0 #F7CE3E;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #F7CE3E;
+    box-shadow: 0 1px 0 0 #F7CE3E;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #F7CE3E;
+  }
 /* =============================================================================================
 Footer CSS 
 ==============================================================================================*/
@@ -75,7 +76,7 @@ Footer CSS
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #851b19;
+    background-color: #1A2930;
     color: white;
     text-align: center;
 }
@@ -86,20 +87,20 @@ Footer CSS
     color: white;
 }
 nav.nav-center {
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul {
     text-align: center;
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul li {
     display: inline;
     float: none;
-    background-color: #851b19;
+    background-color: #1A2930;
 }
 nav.nav-center ul li a {
     display: inline-block;
-    background-color: #851b19;
+    background-color: #1A2930;
     margin-left: 10px;
     margin-right: 10px;
 }
