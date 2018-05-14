@@ -108,7 +108,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     console.log(user.uid + 'this is your uid');
     // console.log(firebaseUser.Kb.I)
     // logOut.classList.remove("hide");
-    $("#userName").text("Hi " + firebaseUser.email + "!");
+    $("#profileHeader").text("Welcome " + firebaseUser.email + "!");
 
   } else {
     // console notification that the user is not logged in
