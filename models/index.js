@@ -12,7 +12,7 @@ console.log('this is your env variable ' + env);
 
 console.log('this is your JAWSDB_URL variable ' + process.env.JAWSDB_URL);
 
-console.log('this is your JAWSDB variable ' + process.env.JAWSDB);
+console.log('this is your JAWSDB variable ' + process.env.JAWSDB_USER);
 
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env
