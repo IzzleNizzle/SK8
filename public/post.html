@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/post.css">
     <title>SK8</title>
@@ -61,6 +62,29 @@
                     </div>
                 </center>
             </form>
+        </div>
+    </div>
+    <!-- Post SUCCESS Modal Structure -->
+    <div id="modal4" class="modal">
+        <div class="modal-content" id="modal4content">
+            <div class="row">
+                <div class="col s12 success">
+                    <i class="success large material-icons">check</i>
+                </div>
+            </div>
+            <p class="success">Post Successful!</p>
+        </div>
+    </div>
+    <!-- Login FAILURE Modal Structure -->
+    <div id="modal5" class="modal">
+        <div class="modal-content" id="modal5content">
+            <div class="row">
+                <div class="col s5 offset-s3">
+                    <i class="success large material-icons">close</i>
+                </div>
+            </div>
+            <p class="success">Post Unsuccessful. Please try again.</p>
+            <p class="success" id='errormessage'></p>
         </div>
     </div>
     <!-- Footer -->
