@@ -55,7 +55,7 @@ $("#btnLogin").on("click", function () {
       $("#errormessage").html(e.message);
       console.log('you didnt sign in');
       // run the error modal
-      logInError(); 
+      logInError();
     });
 })
 
@@ -68,20 +68,20 @@ $("#btnSignUp").on("click", function () {
   // Sign up 
   const promise = auth.createUserWithEmailAndPassword(txtEmail, txtPassword);
   promise
-  .then(response => {
-    console.log('response', response);
-    // run the success modal
-    logInSuccess();
-    // show the logout button
-    $("#btnLogOut").show();
-  })
-  .catch(e => {
-    console.log(e.message)
-    $("#errormessage").html(e.message);
-    console.log('you didnt sign in');
-    // run the error modal
-    logInError(); 
-  });
+    .then(response => {
+      console.log('response', response);
+      // run the success modal
+      logInSuccess();
+      // show the logout button
+      $("#btnLogOut").show();
+    })
+    .catch(e => {
+      console.log(e.message)
+      $("#errormessage").html(e.message);
+      console.log('you didnt sign in');
+      // run the error modal
+      logInError();
+    });
 })
 
 
