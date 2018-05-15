@@ -26,6 +26,7 @@ var trick = {
     "long": long,
     "link": $("#tricklink").val()
 }
+console.log(trick);
 
 $.post("/api/posts", trick);
 

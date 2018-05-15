@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Meta Links for Mobile -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Materialize Link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-        <!-- Google Fonts Link -->
-        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-        <!-- CSS Link -->
-        <link rel="stylesheet" href="./css/profile.css">
-        <title>SK8</title>
-    </head>
+<head>
+  <!-- Meta Links for Mobile -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Materialize Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/profile.css">
+  <title>SK8</title>
+</head>
 
 <body>
-    <!-- Header -->
-    <div class="row header">
-        <div class "col s3"></div>
-        <div class="col s6 offset-s3 title">SK8</div>
-        <div class="col s3 logout">
-            <a href="#" id="btnLogOut" class="logout">Logout</a>
-        </div>
+  <!-- Header -->
+  <div class="row header">
+    <div class "col s3"></div>
+    <div class="col s6 offset-s3 title">SK8</div>
+    <div class="col s3 logout">
+      <a href="#" id="btnLogOut" class="logout">Logout</a>
     </div>
-    <!-- Inside Info-->
-    <div class="container">
-        <!-- Account info -->
-        <div class="col s12 info card-panel">
-            <h5 id="profileHeader"></h5>
+  </div>
+  <!-- Inside Info-->
+  <div class="container">
+    <!-- Account info -->
+    <div class="col s12 welcome card-panel">
+      <h5 id="profileHeader"></h5>
 
+    </div>
+    <div class="col s12 info card-panel">
+      <div class="col s12 tricksTitle card-panel">
+        <h4 id="tricksTitle">YOUR TRICKS</h4>
+      </div>
+      <table class="striped trickData" style="width:100%">
+        <thead>
+          <tr>
+            <th>Trick</th>
+            <th>Youtube Link</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <nav class="nav-center" role="navigation">
+            <div class="nav-wrapper container">
+              <ul>
+                <li>
+                  <a href="post.html">Post</a>
+                </li>
+                <li>
+                  <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="map.html">Map</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="col s12 info card-panel">
-            <h3>Your Tricks</h3>
-                <table class="info" style="width:100%">
-                        <tr>
-                          <th>Trick</th>
-                          <th>Location</th>
-                        </tr>
-                        <tr>
-                          <td>360 toe flip</td> 
-                          <td>Location</td>
-                        </tr>
-                        <tr>
-                          <td>Ollie</td>
-                          <td>Location</td>
-                        </tr>
-                      </table>
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- Footer -->
-        <div class="footer">
-                <div class="container">
-                    <div class="row">
-              <nav class="nav-center" role="navigation">
-                <div class="nav-wrapper container">
-                  <ul>
-                    <li><a href="post.html">Post</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="map.html">Map</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            </div>
-            </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
-            <script src="./javascript/auth.js"></script>
-            <script src="./javascript/profile.js"></script>
-            </body>
-            </html>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <script src="./javascript/auth.js"></script>
+    <script src="./javascript/profile.js"></script>
+</body>
+
+</html>

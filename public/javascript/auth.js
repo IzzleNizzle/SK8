@@ -52,6 +52,7 @@ $("#btnLogin").on("click", function () {
     })
     .catch(e => {
       console.log(e.message)
+      $("#errormessage").html(e.message);
       console.log('you didnt sign in');
       // run the error modal
       logInError(); 
@@ -109,7 +110,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     // console.log(firebaseUser.Kb.I)
     // logOut.classList.remove("hide");
     $("#profileHeader").text("Welcome " + firebaseUser.email + "!");
-
+    profileGetAJAX();
   } else {
     // console notification that the user is not logged in
     console.log('not logged in');
