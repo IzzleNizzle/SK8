@@ -80,7 +80,7 @@ function printMap(data) {
       var tData2 = $("<td>");
       console.log('test');
       tData1.text(data[i].title);
-      tData2.html('<a href=' + data[i].link + '> Link </a>')
+      tData2.html('<a href=' + data[i].link + ' target="_blank"> Link </a>')
 
       tRow.append(tData1);
       tRow.append(tData2);
