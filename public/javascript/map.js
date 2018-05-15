@@ -35,7 +35,7 @@ function initMap() {
 
         google.maps.event.addListener(marker, 'click', (function (marker, i) {
           return function () {
-            infowindow.setContent("" + data[i].title + "<br>" + data[i].link);
+            infowindow.setContent("" + data[i].title + "<br> <a href='" + data[i].link) + "' target='_blank'>Link</a>";
             infowindow.open(mapObject, marker);
           }
         })(marker, i));
