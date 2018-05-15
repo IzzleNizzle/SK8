@@ -1,3 +1,27 @@
+// ===========================================
+// Post Functions
+// ===========================================
+// if the trick posts successfully, it will run modal 4, and re-load the page
+function postSuccess(){
+    $('#modal4').modal();
+    $('#modal4').modal('open');
+          setTimeout(function() {
+  
+            window.location.href = 'post.html';
+      
+          }, 3000);
+        }
+// if not,
+// run #modal5
+function postError(e){
+    $("#errormessage").html(e);
+    console.log(e);
+    $('#modal5').modal();
+    $('#modal5').modal('open');
+  }
+// ===========================================
+// Geolocation Code
+// ===========================================
 var long;
 var lat;
 
@@ -17,8 +41,7 @@ function showPosition(position){
 }
 
 $("#postSubmit").on('click', function(){
-console.log('test');
-
+event.preventDefault();
 var trick = {
     "title": $("#trickname").val(),
     "user": user.email,
@@ -26,8 +49,12 @@ var trick = {
     "long": long,
     "link": $("#tricklink").val()
 }
-console.log(trick);
 
-$.post("/api/posts", trick);
-
+$.post("/api/posts", trick)
+.done(function(msg){ 
+    postSuccess();
+})
+.fail(function(xhr, status, error) {
+    postError(xhr);
+});
 });
