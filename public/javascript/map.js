@@ -63,6 +63,30 @@ function initMap() {
   geolocateUser();
 }
 
+function profileGetAJAX() {
+  console.log('test');
+  // GET AJAX call
+  $.get('/api/posts/', function (data, status) {
+      printMap(data);
+    });
+}
+
+
+
+function printMap(data) {
+  for (var i = 0; i < data.length; i++) {
+      var tRow = $("<tr>");
+      var tData1 = $("<td>");
+      var tData2 = $("<td>");
+      console.log('test');
+      tData1.text(data[i].title);
+      tData2.html('<a href=' + data[i].link + '> Link </a>')
+
+      tRow.append(tData1);
+      tRow.append(tData2);
+      $('.mapTable').append(tRow);
+  }
+}
 
 
 
