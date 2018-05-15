@@ -67,24 +67,24 @@ function profileGetAJAX() {
   console.log('test');
   // GET AJAX call
   $.get('/api/posts/', function (data, status) {
-      printMap(data);
-    });
+    printMap(data);
+  });
 }
 
 
 
 function printMap(data) {
   for (var i = 0; i < data.length; i++) {
-      var tRow = $("<tr>");
-      var tData1 = $("<td>");
-      var tData2 = $("<td>");
-      console.log('test');
-      tData1.text(data[i].title);
-      tData2.html('<a class="tricklink" href=' + data[i].link + ' target="_blank"> Link </a>')
+    var tRow = $("<tr>");
+    var tData1 = $("<td>");
+    var tData2 = $("<td>");
+    console.log('test');
+    tData1.text(data[i].title);
+    tData2.html('<a class="tricklink" href=' + data[i].link + ' target="_blank"> Link </a>')
 
-      tRow.append(tData1);
-      tRow.append(tData2);
-      $('.mapTable').append(tRow);
+    tRow.append(tData1);
+    tRow.append(tData2);
+    $('.mapTable').append(tRow);
   }
 }
 
