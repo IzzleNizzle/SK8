@@ -27,22 +27,28 @@
     </div>
     <!-- Inside Info-->
     <div class="container">
-        <!-- App info -->
-        <div class="col s12 info card-panel">
+        <!-- Welcome -->
+        <div class="col s12 card-panel">
             <p class="info">Welcome to SK8! Here, you can share with a community of skaters the tricks you master.</p>
-            <br>
-            <p class="info">If you haven't been here before, just sign up by clicking below and entering your email and 
-                a password of your choice, then clicking Sign Up.</p>
-                <br>
-            <p class="info">Once your in, you can search for tricks other people have posted by clicking on 'Map', post 
-                your own tricks by clicking on 'Post', and seeing all the tricks you've posted by clicking on 'Profile'</p>
-                <br>
-                <p class="info">Have fun and happy SK8ing!</p>
         </div>
         <!-- Login Button -->
         <div class="center-align">
             <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">get started</a>
         </div>
+
+        <!-- App Info -->
+        <div class="col s12 info card-panel" id="infoPanel">
+            <p class="info">If you haven't been here before, just sign up by clicking 'Get Started' and entering your email and a password of your
+                choice, then clicking Sign Up.</p>
+            <br>
+            <p class="info">Once your in, you can search for tricks other people have posted by clicking on 'Map', post your own tricks by
+                clicking on 'Post', and seeing all the tricks you've posted by clicking on 'Profile'</p>
+            <br>
+            <p class="info">Have fun and happy SK8ing!</p>
+        </div>
+        <br>
+        <br>
+        <br>
         <!-- Login Modal Structure -->
         <div id="modal1" class="modal">
             <div class="modal-content">
@@ -86,22 +92,22 @@
                         <p class="success">Login Successful!</p>
                         <p class="success">Redirecting you to your profile...</p>
                         <div class="progress">
-                                <div class="indeterminate"></div>
-                            </div>
+                            <div class="indeterminate"></div>
+                        </div>
                     </div>
                 </div>
                 <!-- Login FAILURE Modal Structure -->
                 <div id="modal3" class="modal">
-                        <div class="modal-content" id="modal2content">
-                            <div class="row">
-                                <div class="col s5 offset-s3">
-                                    <i class="success large material-icons">close</i>
-                                </div>
+                    <div class="modal-content" id="modal2content">
+                        <div class="row">
+                            <div class="col s5 offset-s3">
+                                <i class="success large material-icons">close</i>
                             </div>
-                            <p class="success">Login Unsuccessful</p>
-                            <p class="success" id='errormessage'></p>
                         </div>
+                        <p class="success">Login Unsuccessful</p>
+                        <p class="success" id='errormessage'></p>
                     </div>
+                </div>
             </div>
         </div>
         <!-- Footer -->
