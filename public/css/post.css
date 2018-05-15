@@ -41,6 +41,9 @@ body {
 .btn-large {
     background-color: #F7CE3E;
 }
+.btn-large:hover {
+    background-color: #1A2930;
+}
   /* label color */
   .input-field label {
     color: #000;
