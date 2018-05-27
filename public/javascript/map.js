@@ -12,7 +12,8 @@ function initMap() {
     // Place the marker
     new google.maps.Marker({
       map: mapObject,
-      position: userLatLng
+      position: userLatLng,
+      icon: '/javascript/skater_icon.png'
     });
 
     var infowindow = new google.maps.InfoWindow({});
