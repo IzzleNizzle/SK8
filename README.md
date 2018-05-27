@@ -48,8 +48,8 @@ https://github.com/melindarichards
 ## Pictures and Examples
 
 ###### Home Page
-![SK8 Home Page](./public/css/images/SK8home.png "SK8 Home Page")
-![SK8 Login Page](./public/css/images/SK8login.png "SK8 Login Page")
-![SK8 Profile Page](./public/css/images/SK8profile.png "SK8 Profile Page")
-![SK8 Post Page](./public/css/images/SK8post.png "SK8 Post Page")
-![SK8 Map Page](./public/css/images/SK8map.png "SK8 Map Page")
+![SK8 Home Page](./public/css/images/SK8home.png "SK8 Home Page" =368x653)
+![SK8 Login Page](./public/css/images/SK8login.png "SK8 Login Page" =368x653)
+![SK8 Profile Page](./public/css/images/SK8profile.png "SK8 Profile Page" =368x653)
+![SK8 Post Page](./public/css/images/SK8post.png "SK8 Post Page" =368x653)
+![SK8 Map Page](./public/css/images/SK8map.png "SK8 Map Page" =368x653)
