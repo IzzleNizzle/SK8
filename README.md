@@ -30,7 +30,7 @@ https://github.com/BrookeMo
 ###### Melinda Richards | Front End Developer / Google Maps API
 https://github.com/melindarichards
 
-### Technologies Used
+#### Technologies Used
 
 - HTML
 - CSS
@@ -45,10 +45,12 @@ https://github.com/melindarichards
 - Firebase
 - Postman
 
-## Pictures and Examples
+## Pictures
 
 ###### Home Page
 ![SK8 Home Page](./public/css/images/SK8home.png "SK8 Home Page")
+###### Login Page
+![SK8 Login Page](./public/css/images/SK8login.png "SK8 Login Page")
 ###### Profile Page
 ![SK8 Profile Page](./public/css/images/SK8profile.png "SK8 Profile Page")
 ###### Post Page
