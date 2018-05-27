@@ -30,26 +30,30 @@ https://github.com/BrookeMo
 ###### Melinda Richards | Front End Developer / Google Maps API
 https://github.com/melindarichards
 
-### Technologies Used
+#### Technologies Used
 
--HTML
--CSS
--Materialize
--Javascript
--Node.js
--jQuery
--Geolocation API
--Google Maps API
--MySQL
--JSON
--Firebase
--Postman
+- HTML
+- CSS
+- Materialize
+- Javascript
+- Node.js
+- jQuery
+- Geolocation API
+- Google Maps API
+- MySQL
+- JSON
+- Firebase
+- Postman
 
-## Pictures and Examples
+## Pictures
 
 ###### Home Page
 ![SK8 Home Page](./public/css/images/SK8home.png "SK8 Home Page")
+###### Login Page
 ![SK8 Login Page](./public/css/images/SK8login.png "SK8 Login Page")
+###### Profile Page
 ![SK8 Profile Page](./public/css/images/SK8profile.png "SK8 Profile Page")
+###### Post Page
 ![SK8 Post Page](./public/css/images/SK8post.png "SK8 Post Page")
+###### Map Page
 ![SK8 Map Page](./public/css/images/SK8map.png "SK8 Map Page")
